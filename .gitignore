@@ -2,3 +2,4 @@
 .env
 experement/
 *.db
+*sqlite

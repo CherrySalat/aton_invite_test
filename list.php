@@ -92,7 +92,7 @@ $res = $db->query($testQuery);
                     <td><?= $client['birthday'] ?></td>
                     <td><?= $client['inn'] ?></td>
                     <td>
-                        <select onchange="changeStatus(event)" id="<?= $client['id_accaunt'] ?>" name="client-status" id="client-status">
+                        <select onchange="changeStatus(event)" id="<?= $client['account_id']; ?>" name="client-status" id="client-status">
                             <option value="1" <?= $client['status'] === $statuses[1] ? 'selected=""' : ""; ?>>Не в работе</option>
                             <option value="2" <?= $client['status'] === $statuses[2] ? 'selected=""' : ""; ?>>В работе</option>
                             <option value="3" <?= $client['status'] === $statuses[3] ? 'selected=""' : ""; ?>>Отказ</option>
